@@ -59,11 +59,11 @@ fun PasswordScreen(
     }
 }
 
-@Preview("UsernameScreen")
-@Preview("UsernameScreen (dark)", uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview("PasswordScreen")
+@Preview("PasswordScreen (dark)", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
-private fun UsernameScreenPreview() {
+private fun PasswordScreenPreview() {
     NavigationInComposeTheme {
-        UsernameScreen({})
+        PasswordScreen({})
     }
 }

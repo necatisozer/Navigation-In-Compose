@@ -17,8 +17,8 @@ import com.necatisozer.navigationincompose.data.DataFactory
 import com.necatisozer.navigationincompose.ui.theme.NavigationInComposeTheme
 
 @Composable
-fun RegisterScreen(
-    onRegisterClick: () -> Unit,
+fun LoginCompleteScreen(
+    onLoginClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Scaffold(
@@ -26,7 +26,7 @@ fun RegisterScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "Register")
+                    Text(text = "Login")
                 },
             )
         }
@@ -40,19 +40,19 @@ fun RegisterScreen(
         ) {
             Button(onClick = {
                 DataFactory.isLoggedIn = true
-                onRegisterClick()
+                onLoginClick()
             }) {
-                Text(text = "Register")
+                Text(text = "Login")
             }
         }
     }
 }
 
-@Preview("UsernameScreen")
-@Preview("UsernameScreen (dark)", uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview("LoginCompleteScreen")
+@Preview("LoginCompleteScreen (dark)", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
-private fun UsernameScreenPreview() {
+private fun LoginCompleteScreenPreview() {
     NavigationInComposeTheme {
-        UsernameScreen({})
+        LoginCompleteScreen({})
     }
 }

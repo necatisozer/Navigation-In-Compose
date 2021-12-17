@@ -45,4 +45,5 @@ fun NavGraphBuilder.mainGraph(navController: NavController) {
             onHomeClick = { navController.popBackStack("home", false) },
         )
     }
+    loginGraph(navController)
 }
